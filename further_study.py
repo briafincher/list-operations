@@ -237,8 +237,10 @@ def custom_equality(some_list, another_list):
         False
 
     """
-    for item1, item2 in zip(some_list, another_list):
-        if item1 != item2:
+    if custom_len(some_list) != custom_len(another_list):
+        return False
+    for i, item1 in enumerate(some_list):
+        if item1 != another_list[i]:
             return False
     return True
 
