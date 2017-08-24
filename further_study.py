@@ -100,7 +100,7 @@ def custom_insert(input_list, index, value):
 
     """
 
-    pass
+    input_list[index-1:index+1] = [input_list[index-1], value, input_list[index]]
 
 
 def custom_remove(input_list, value):
