@@ -229,7 +229,6 @@ def delete_middle(input_list):
 # Please ask for a code review from an Education team member before proceeding.
 ##############################################################################
 
-# This is the part were we actually run the doctests.
 
 if __name__ == "__main__":
     import doctest
