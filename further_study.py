@@ -237,8 +237,10 @@ def custom_equality(some_list, another_list):
         False
 
     """
-
-    return None
+    for item1, item2 in zip(some_list, another_list):
+        if item1 != item2:
+            return False
+    return True
 
 
 ##############################################################################
